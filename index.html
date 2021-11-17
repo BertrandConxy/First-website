@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Responsive web</title>
+    
+    <link rel="stylesheet"  href="style.css">
+
+    <link rel="stylesheet" href="../WEB2/css/w3.css">
+
+    <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link href="../WEB2/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <!--navigation-->
+    <nav class="w3-top">
+    
+        <div class="w3-bar  w3-black ">
+            <span class=" branding w3-bar-item w3-text-red w3-mobile"><i class="fa fa-user"></i>BERRY web</span>
+            <span class="w3-right w3-mobile">
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-red">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-mobile w3-hover-red">About</a>
+            <a href="#services" class="w3-bar-item w3-button w3-mobile w3-hover-red">Services</a>
+            <a href="#contact us" class="w3-bar-item w3-button w3-mobile w3-hover-red">Contact us</a>
+             </span>
+          </div>
+    </nav>
+ <!--showcase-->
+    <section class="showcase">
+        <div class="w3-container w3-center w3-text-white w3-animate-opacity">
+            <h1>Go Anywhere</h1>
+            <hr>
+            <p>For 50 years, WWF has been protecting the future of nature.<br>
+                The world's leading conservation organization,
+                WWF <br>works in 100 countries and is supported by<br>
+                1.2 million members in the United States<br> and
+                close to 5 million globally.</p>
+                <button onclick="document.getElementById('modal').style.display='block'" class="w3-button w3-red w3-center w3-xlarge w3-text-bold w3-opacity">Start Here</button>
+
+
+                <div id="modal" class="w3-modal">
+                    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                      <header class="w3-container w3-red"> 
+                        <span onclick="document.getElementById('modal').style.display='none'" 
+                        class="w3-button w3-display-topright">&times;</span>
+                        <h2>REGISTERING FORM</h2>
+                      </header>
+                      <div class="w3-container w3-light-grey">
+                          
+                          <form class="w3-container">
+                            <label class="w3-text-red"><b>First Name</b></label>
+                            <input class="w3-input w3-border w3-light-grey" type="text" placeholder="First Name">
+                          
+                            <label class="w3-text-red"><b>Last Name</b></label>
+                            <input class="w3-input w3-border w3-light-grey" type="text" placeholder="Last Name">
+
+                            <label class="w3-text-red"><b>Password</b></label>
+                            <input class="w3-input w3-border w3-light-grey" type="password" placeholder="Password">
+
+                            <label class="w3-text-red"><b>Confirm Password</b></label>
+                            <input class="w3-input w3-border w3-light-grey" type="password" placeholder="Password">
+                            <br>
+                            <button class="w3-button w3-padding-xlarge w3-black w3-xlarge ">REGISTER</button>
+                          </form>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        </div>
+    </section>
+    <!--section1-->
+    <section class="section1 w3-red w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <i class=" w3-xxlarge fas fa-home"></i>
+            <h2 class="w3-xxlarge">Welcome Home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br> ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        </div>
+    </section>
+    <!--section2-->
+    <section id="about" class="section1 w3-light-grey w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <i class=" w3-xxlarge fas fa-cog"></i>
+            <h2 class="w3-xxlarge">Let's begin</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br> ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        </div>
+    </section>
+    <!--About-->
+    <section class="section ">
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-col s5 m5">
+                <img src="./imgs/img-03.jpg " alt="about">
+            </div>
+            <div class="w3-col m7">
+                <button onclick="myFunction('what')" class="w3-button w3-black w3-block w3-left-align">
+                    What</button>
+                    
+                    <div id="what" class="w3-container w3-light-grey w3-show">
+                        <h2>We Do It All</h2>
+                      <p>For 50 years, WWF has been protecting the future of nature.<br>
+                        The world's leading conservation organization,
+                        For 50 years, WWF has been protecting the future of nature.<br>
+                        The world's leading conservation organization,</p>
+                    </div>
+                    <button onclick="myFunction('where')" class="w3-button w3-black w3-block w3-left-align">
+                        where</button>
+                        
+                        <div id="where" class="w3-container w3-light-grey w3-hide">
+                            <h2>Everywhere</h2>
+                          <p>For 50 years, WWF has been protecting the future of nature.<br>
+                            The world's leading conservation organization,
+                            For 50 years, WWF has been protecting the future of nature.<br>
+                            The world's leading conservation organization,</p>
+                        </div>
+                        <button onclick="myFunction('with')" class="w3-button w3-black  w3-block w3-left-align">
+                            with</button>
+                            
+                            <div id="with" class="w3-container w3-light-grey w3-hide">
+                                <h2>With Energy</h2>
+                              <p>For 50 years, WWF has been protecting the future of nature.<br>
+                                The world's leading conservation organization,
+                                For 50 years, WWF has been protecting the future of nature.<br>
+                                The world's leading conservation organization,</p>
+                            </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--SERVICES heading-->
+    <section id="services" class="section w3-red w3-hover-opacity">
+        <div class="w3-container w3-center">
+            
+            <h2 class="w3-xxlarge w3-text-shadow">Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br> ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        </div>
+    </section>
+
+    <!--services-->
+    <section class="section w3-light-grey">
+        <div class="w3-container w3-center ">
+         <div class="w3-row">
+             <div class="w3-col m3">
+                <i class="fas fa-comment w3-red w3-padding-small w3-xlarge w3-round"></i>
+                <h2>Digital Marketing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+             </div>
+             <div class="w3-col m3">
+                <i class="fas fa-search w3-red w3-padding-small w3-xlarge w3-round"></i>
+                <h2>SEO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+             </div>
+             <div class="w3-col m3">
+                <i class="fas fa-cloud w3-red w3-padding-small w3-xlarge w3-round"></i>
+                <h2>Hosting Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+             </div>
+             <div class="w3-col m3">
+                <i class="fas fa-cubes w3-red w3-padding-small w3-xlarge w3-round"></i>
+                <h2>Software Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+             </div>
+         </div>
+        </div>
+    </section>
+    <!--contact us heading-->
+    <section id="contact us" class="section w3-dark-grey w3-hover-opacity">
+        <div class="w3-container w3-center">
+            
+            <h2 class="w3-xxlarge w3-text-shadow">Get In Touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br> ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        </div>
+        </section>
+
+        <!--contact us-->
+    <section class="section ">
+        <div class="w3-container w3-padding-small ">
+            
+            <div class="w3-container w3-padding-small w3-dark-grey">
+                <h2>Contact Us</h2>
+              </div>
+              
+              <form class="w3-container">
+                  <br>
+                <label class="w3-text-dark-grey"><b>First Name</b></label>
+                <input class="w3-input w3-border w3-light-grey" type="text" placeholder="First Name">
+              
+                <label class="w3-text-dark-grey"><b>Last Name</b></label>
+                <input class="w3-input w3-border w3-light-grey" type="text" placeholder="Last Name">
+
+                <label class="w3-text-dark-grey"><b>Email</b></label>
+                <input class="w3-input w3-border w3-light-grey" type="email" placeholder="Email">
+
+                <label class="w3-text-dark-grey"><b>Message</b></label>
+                <textarea class="w3-input w3-border w3-light-grey" placeholder="Write your message"></textarea>
+                
+              <br><br>
+                <button type="submit" class="w3-button w3-hover-opacity w3-medium w3-red">SUBMIT</button>
+              </form>
+        </div>
+        </section>
+        <!--footer-->
+
+        <footer class=" w3-container w3-black w3-padding-xlarge w3-center">
+            <p>Berry Web &copy;2021</p>
+        </footer>
+
+
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>

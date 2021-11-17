@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+.branding{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+font-weight: 600;
+}
+nav a{
+    font-size: larger;
+}
+.showcase{padding: 50px;
+    background-image: url('imgs/img-home.jpg') ;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+}
+h1{
+    text-transform: uppercase;
+
+}
+p{
+    font-size: 18px;
+}
+.showcase hr{
+    width:400px;
+    margin: auto;
+    border-color: rgb(116, 33, 33);
+    border-width: 3px;
+}
+.section1{
+    height:fit-content;
+    padding: 90px 0;
+
+}
+.section{
+    height: 900px fit-content;
+    padding: 30px 0;
+}
+.section img{
+    height: fit-content;
+    width: 100%;
+}
+@media only screen and (max-width:600px){
+    .showcase{
+        margin-top: 190px;
+    }
+}
